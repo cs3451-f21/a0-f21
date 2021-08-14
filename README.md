@@ -35,10 +35,10 @@ Here are some details requirements and guidance for what we expect.
 4. when the user clicks and drags, a grey hollow rectangle should be traced out from the start point to the current mouse location as the mouse moves and the button is held.  
 5. when the user releases the button, a rectangle with a thick black border should be drawn that is the same size and location as the final grey rectangle drawn when dragging the mouse.  It should contain two lines that cross the center from the four corners, creating four triangles. 
 6. information needed to redraw the rectangle should be saved (the corners). A random color should be created and saved with this rectangle.
-6. if the user moves the mouse out of the canvas before releasing the button, the rectangle creation should be canceled.
-5. inside each of the first 4 triangles, a new triangle of should be drawn using the rectangle's assigned color. Each new triangle should use the mid-points of each of the sides of the enclosing triangle as it's corners.
-6. additional triangles will be created recursively based on the size of the rectangle (see more details on what should be drawn, below).  
-7. the canvas should be redrawn each animation frame, with each of the created rectangles being rendered. Nothing should be drawn in the canvas outside of the render function.
+7. if the user moves the mouse out of the canvas before releasing the button, the rectangle creation should be canceled.
+8. inside each of the first 4 triangles, a new triangle of should be drawn using the rectangle's assigned color. Each new triangle should use the mid-points of each of the sides of the enclosing triangle as it's corners.
+9. additional triangles will be created recursively based on the size of the rectangle (see more details on what should be drawn, below).  
+10. the canvas should be redrawn each animation frame, with each of the created rectangles being rendered. Nothing should be drawn in the canvas outside of the render function.
 
 ## Recursion 
 
